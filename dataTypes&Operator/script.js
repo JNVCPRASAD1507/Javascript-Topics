@@ -127,6 +127,7 @@ console.log("Designation : developer"); // Designation : developer
 //     course:"Developer",
 //     college:"Sasi Engineering College"
 // }
+// console.log(student);
 
 // Print the student name.
 
