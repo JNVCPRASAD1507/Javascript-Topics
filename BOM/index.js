@@ -69,7 +69,6 @@
 let allProducts = [];
 let filteredProducts = [];
 
-/* Fetch API */
 async function products() {
 
   let box = document.getElementById("products");
@@ -95,7 +94,6 @@ async function products() {
   }
 }
 
-/* Display Products */
 function displayProducts(items) {
 
   let box = document.getElementById("products");
@@ -124,7 +122,6 @@ function displayProducts(items) {
   });
 }
 
-/* Search */
 document.getElementById("search")
 .addEventListener("input", function () {
 
@@ -137,7 +134,6 @@ document.getElementById("search")
   displayProducts(filteredProducts);
 });
 
-/* Sort Low to High */
 function sortLow() {
 
   filteredProducts.sort((a, b) => a.price - b.price);
@@ -145,7 +141,6 @@ function sortLow() {
   displayProducts(filteredProducts);
 }
 
-/* Sort High to Low */
 function sortHigh() {
 
   filteredProducts.sort((a, b) => b.price - a.price);
@@ -153,7 +148,6 @@ function sortHigh() {
   displayProducts(filteredProducts);
 }
 
-/* Category Filter */
 function filterCategory() {
 
   let value = document.getElementById("category").value;
@@ -169,7 +163,6 @@ function filterCategory() {
   displayProducts(filteredProducts);
 }
 
-/* View Details */
 function viewDetails(id) {
 
   let product = allProducts.find((item) => item.id === id);
@@ -185,7 +178,6 @@ function viewDetails(id) {
   `;
 }
 
-/* Close Modal */
 function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
